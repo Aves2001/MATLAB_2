@@ -3,7 +3,7 @@ try
     clc
     a = genArrayRand('a');
     clc
-    fprintf("Введений масив:\n\n");
+    fprintf("Згенерований масив:\n\n");
     disp(a);
     dob = dob_nonzero_elements(a);
     summ = sum_modules_array(a);
