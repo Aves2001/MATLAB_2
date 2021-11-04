@@ -93,6 +93,9 @@ function array = genArray(s)
                 elseif ~isnumeric(array(i))
                     ok_input = 1;
                     disp('Потрібно вказати число');
+                elseif array(i) ~= floor(array(i))
+                    ok_input = 1;
+                    disp('Потрібно ввести ціле число');
                 else
                     ok_input = 0;
                 end
